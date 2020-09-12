@@ -31,7 +31,7 @@ curl -sSL https://repos.insights.digitalocean.com/install.sh | sudo bash
 # install R packages
 R --vanilla << EOF
 if (!require("rmarkdown")) {
-  install.packages(c("rstan", "brms", "rstanarm"), repos = "http://cran.us.r-project.org")
+  install.packages(c("rstan", "brms", "rstanarm", "tidyverse"), repos = "http://cran.us.r-project.org")
 }
 q()
 EOF
