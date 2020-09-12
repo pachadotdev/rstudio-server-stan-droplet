@@ -31,12 +31,7 @@ curl -sSL https://repos.insights.digitalocean.com/install.sh | sudo bash
 # install R packages
 R --vanilla << EOF
 if (!require("rmarkdown")) {
-  install.packages(c("Amelia","countrycode", "cshapes", "DT",
-	"future", "purrr", "ggstance", "here", "huxtable",
-	"imputeTS", "lme4", "OECD", "pander", "gapminder",
-	"stargazer", "validate", "WDI", "devtools",
-	"ggplot2", "broom", "broom.mixed", "patchwork",
-	"rstanarm", "tictoc"), repos = "http://cran.us.r-project.org")
+  install.packages(c("rstan", "brms", "rstanarm"), repos = "http://cran.us.r-project.org")
 }
 q()
 EOF
